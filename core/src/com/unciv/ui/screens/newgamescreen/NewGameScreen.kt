@@ -106,7 +106,10 @@ class NewGameScreen(
             }
         }
 
-        rightSideButton.setText("Start game!".tr())
+        rightSideButton.apply {
+            setText("Start game!".tr())
+            color = Color.GREEN
+        }        
         rightSideButton.onClick(this::startGameAvoidANRs)
     }
 
